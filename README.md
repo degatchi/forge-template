@@ -1,5 +1,5 @@
 # Forge Template
-> A catered template of https://github.com/FrankieIsLost/forge-template. 
+> A catered template of https://github.com/FrankieIsLost/forge-template. <br/>
 A template for quickly getting started with forge
 
 ## Getting Started
@@ -22,6 +22,10 @@ Includes common testing contracts like `Hevm.sol` and `Console.sol`, as well as 
 ### Preinstalled dependencies
 
 `ds-test`, `solmate` + `openzeppelin` are already installed.
+
+### Truffle 
+
+Installed for the truffle flattener b/c Forge isn't compatible w/ chain deployments separate from Ethereum.
 
 ### Linting
 
