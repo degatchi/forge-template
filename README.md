@@ -1,5 +1,6 @@
 # Forge Template
-> A catered template of https://github.com/FrankieIsLost/forge-template. <br/>
+> A catered template of https://github.com/FrankieIsLost/forge-template.
+
 A template for quickly getting started with forge
 
 ## Getting Started
