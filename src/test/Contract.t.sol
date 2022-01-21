@@ -6,15 +6,29 @@ import {Utilities} from "./utils/Utilities.sol";
 import {console} from "./utils/Console.sol";
 import {Hevm} from "./utils/Hevm.sol";
 
+import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+
+import {MockERC721} from "./mock-ercs/ERC721.sol";
+import {MockERC20} from "./mock-ercs/ERC20.sol";
+
 contract ContractTest is DSTest {
-    Hevm internal immutable hevm = Hevm(HEVM_ADDRESS);
+    Hevm internal immutable hevm = Hevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D); // HEVM-ADDRESS
 
     Utilities internal utils;
     address payable[] internal users;
+    address internal deployer;
+
+    MockERC20 internal weth;
 
     function setUp() public {
         utils = new Utilities();
         users = utils.createUsers(5);
+
+        weth = new MockERC20("Wrapped Eth", "WETH", 18);
+
+        // Deploy contract w/ deployer
+        hevm.prank(deployer);
     }
 
     function testExample() public {
