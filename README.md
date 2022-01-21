@@ -1,5 +1,5 @@
 # Forge Template
-
+> A catered template of https://github.com/FrankieIsLost/forge-template. 
 A template for quickly getting started with forge
 
 ## Getting Started
@@ -17,11 +17,11 @@ forge test
 
 ### Testing Utilities
 
-Includes common testing contracts like `Hevm.sol` and `Console.sol`, as well as a `Utilities.sol` contract with common testing methods like creating users with an initial balance
+Includes common testing contracts like `Hevm.sol` and `Console.sol`, as well as a `Utilities.sol` contract with common testing methods like creating users with an initial balance.
 
 ### Preinstalled dependencies
 
-`ds-test` and `solmate` are already installed
+`ds-test`, `solmate` + `openzeppelin` are already installed.
 
 ### Linting
 
@@ -39,7 +39,3 @@ Automatically run linting and tests on pull requests.
 ### Default Configuration
 
 Including `.gitignore`, `.vscode`, `remappings.txt`
-
-## Acknowledgement
-
-A catered template of https://github.com/FrankieIsLost/forge-template.
