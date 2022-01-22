@@ -14,6 +14,13 @@ forge build
 forge test
 ```
 
+### Tips
+- `hevm.warp(uint256)` : sets block.timestamp to `uint256`
+- `hevm.prank(address)` : sets msg.sender to `address` for 1 tx
+- `hevm.startPrank(address)` : sets msg.sender to `address` until `hevm.stopPrank()`
+- `hevm.stopPrank()` : stops msg.sender being `address`
+- `forge test --match--contract <CONTRACT_NAME>` : tests a single contract (don't put `.t.sol` or `.sol` at the end).
+ 
 ## Features
 
 ### Testing Utilities
