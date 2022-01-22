@@ -14,12 +14,21 @@ forge build
 forge test
 ```
 
+## Running Tests
+When adjusting the contract being tested you may need to compile from scratch. Sometimes forge bugs out and doesn't recompile properly. 
+```
+forge clean
+forge test -vvv
+```
+- `-v`, `-vv`, `-vvv`, `-vvvv` : each v increases the details returned from the test (I usually use `-vvv` & `-vvvv`)
+- `forge test --match--contract <CONTRACT_NAME>` : tests a single contract (don't put `.t.sol` or `.sol` at the end).
+
+
 ## Commonly Used Functions
 - `hevm.warp(uint256)` : sets block.timestamp to `uint256`
 - `hevm.prank(address)` : sets msg.sender to `address` for 1 tx
 - `hevm.startPrank(address)` : sets msg.sender to `address` until `hevm.stopPrank()`
 - `hevm.stopPrank()` : stops msg.sender being `address`
-- `forge test --match--contract <CONTRACT_NAME>` : tests a single contract (don't put `.t.sol` or `.sol` at the end).
  
 ## Features
 
