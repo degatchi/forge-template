@@ -14,7 +14,7 @@ forge build
 forge test
 ```
 
-### Commonly used funcs
+## Commonly Used Functions
 - `hevm.warp(uint256)` : sets block.timestamp to `uint256`
 - `hevm.prank(address)` : sets msg.sender to `address` for 1 tx
 - `hevm.startPrank(address)` : sets msg.sender to `address` until `hevm.stopPrank()`
