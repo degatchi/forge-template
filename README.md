@@ -20,7 +20,7 @@ When adjusting the contract being tested you may need to compile from scratch. S
 forge clean && forge test -vvv
 ```
 - `-v`, `-vv`, `-vvv`, `-vvvv` : each v increases the details returned from the test (I usually use `-vvv` & `-vvvv`)
-- `forge test --match--contract <CONTRACT_NAME>` : tests a single contract (don't put `.t.sol` or `.sol` at the end).
+- `forge test -vvv --match--contract <CONTRACT_NAME>` : tests a single contract (don't put `.t.sol` or `.sol` at the end).
 
 
 ## Commonly Used Functions
