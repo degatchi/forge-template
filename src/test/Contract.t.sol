@@ -26,11 +26,11 @@ contract ContractTest is DSTest {
         users = utils.createUsers(5);
 
         weth = new MockERC20("Wrapped Eth", "WETH", 18);
-
-        // Deploy contract w/ deployer
-        hevm.prank(deployer);
     }
 
+    /**
+        @dev Test for things that are meant to work correctly.
+     */
     function testExample() public {
         address payable alice = users[0];
         console.log("alice's address", alice);
@@ -39,5 +39,14 @@ contract ContractTest is DSTest {
         (bool sent, ) = bob.call{value: 10 ether}("");
         assertTrue(sent);
         assertGt(bob.balance, alice.balance);
+    }
+
+    /**
+        @dev Test for failures.
+     */
+    function testFailExample() public {
+        uint256 bal = 1;
+        uint256 notBal = 2;
+        assertEq(bal, notBal);
     }
 }
