@@ -20,6 +20,8 @@ forge build
 forge test
 ```
 
+flatten your contracts using: `forge flatten ./src/[folder]/[contract].sol`
+
 ## Running Tests
 When adjusting the contract being tested you may need to compile from scratch. Sometimes forge bugs out and doesn't recompile properly. 
 ```
