@@ -21,7 +21,7 @@ forge test
 ```
 
 ## Flattening
-Terminal: `forge flatten ./src/[folder]/[contract].sol`
+Terminal: `forge flatten ./src/[folder]/[contract].sol` <br/>
 Pipe into contract: `forge flatten ./src/[folder]/[contract].sol > output.sol`
 
 ## Running Tests
