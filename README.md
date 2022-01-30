@@ -5,6 +5,12 @@ A template for quickly getting started with forge
 
 ## Getting Started
 
+If you don't have forge installed:
+1. `curl -L https://foundry.paradigm.xyz | bash`
+2. `foundryup`
+3. `brew install libusb`
+4. then forge should be intalled
+
 ```
 mkdir my-project
 cd my-project
