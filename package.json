@@ -21,8 +21,7 @@
   "devDependencies": {
     "prettier": "^2.5.1",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
-    "solhint": "^3.3.6",
-    "truffle-flattener": "^1.5.0"
+    "solhint": "^3.3.6"
   },
   "dependencies": {
     "dependencies": "^0.0.1",
