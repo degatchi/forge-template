@@ -16,7 +16,7 @@
     "solhint:check": "solhint --config ./.solhint.json 'src/**/*.sol'",
     "lint": "npm run prettier && npm run solhint",
     "lint:check": "npm run prettier:check && npm run solhint:check",
-    "flat:exampleContract": "truffle-flattener src/testing-lib/exampleContract.sol > src/flats/exampleContract.sol"
+    "flat:exampleContract": "forge flatten src/exampleContract.sol > src/flats/exampleContract.sol"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
