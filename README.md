@@ -78,3 +78,6 @@ Automatically run linting and tests on pull requests.
 ### Default Configuration
 
 Including `.gitignore`, `.vscode`, `remappings.txt`
+
+## License
+This project is open-sourced software licensed under the GNU Affero GPL v3.0 license. See the [License file](LICENSE.md) for more information.
