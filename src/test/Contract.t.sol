@@ -6,11 +6,12 @@ import {Utilities} from "./utils/Utilities.sol";
 import {console} from "./utils/Console.sol";
 import {Hevm} from "./utils/Hevm.sol";
 
-import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
-import {MockERC721} from "./mock-ercs/ERC721.sol";
-import {MockERC20} from "./mock-ercs/ERC20.sol";
+import {MockERC20} from "./mocks/ERC20.sol";
+import {MockERC721} from "./mocks/ERC721.sol";
+import {MockERC1155} from "./mocks/ERC1155.sol";
 
 contract ContractTest is DSTest {
     Hevm internal immutable hevm = Hevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D); // HEVM-ADDRESS
@@ -26,6 +27,8 @@ contract ContractTest is DSTest {
         users = utils.createUsers(5);
 
         weth = new MockERC20("Wrapped Eth", "WETH", 18);
+
+        hevm.deal(users[1], 100e18); // give users[1] 100 ETH
     }
 
     /**
