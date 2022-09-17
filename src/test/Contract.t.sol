@@ -13,6 +13,8 @@ import {MockERC20} from "./mocks/ERC20.sol";
 import {MockERC721} from "./mocks/ERC721.sol";
 import {MockERC1155} from "./mocks/ERC1155.sol";
 
+/// run test:
+/// forge test --fork-url https://api.avax.network/ext/bc/C/rpc --fork-block-number 17065205 -vvv
 contract ContractTest is DSTest {
     Hevm internal immutable hevm = Hevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D); // HEVM-ADDRESS
 
